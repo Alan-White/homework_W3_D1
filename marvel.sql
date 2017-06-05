@@ -35,6 +35,7 @@ INSERT INTO people (name) VALUES ('Tom Roddick');
 INSERT INTO people (name) VALUES ('Alan White');
 INSERT INTO people (name) VALUES ('Glen Young');
 
+
 INSERT INTO movies (title, year, show_time) VALUES ('Iron Man', 2008, '17:55');
 INSERT INTO movies (title, year, show_time) VALUES ('The Incredible Hulk', 2008, '17:55');
 INSERT INTO movies (title, year, show_time) VALUES ('Iron Man 2', 2010, '17:10');
@@ -50,3 +51,16 @@ INSERT INTO movies (title, year, show_time) VALUES ('Avengers: Age of Ultron', 2
 INSERT INTO movies (title, year, show_time) VALUES ('Ant-Man', 2015, '19:15');
 INSERT INTO movies (title, year, show_time) VALUES ('Captain America: Civil War', 2016, '12:35');
 INSERT INTO movies (title, year, show_time) VALUES ('Doctor Strange', 2016, '21:30');
+
+UPDATE people SET name = 'James Cox' WHERE name = 'Jasmse Cox';
+--SELECT name FROM people WHERE name = 'Alan White';
+INSERT INTO people (name) VALUES ('Sandy');
+DELETE FROM people WHERE name = 'Winston Ingram';
+UPDATE people SET name = 'James Cox' WHERE name = 'Jasmse Cox';
+UPDATE people SET name = 'Jack Jarvis' WHERE name = 'Fred' AND id = 9;
+UPDATE people SET name = 'Victor McDade' WHERE name = 'Fred' AND id = 13;
+INSERT INTO movies (title, year, show_time) VALUES ('Guardians of the Galaxy 2', 2014, '24:00');
+
+UPDATE movies SET show_time = '21:30' WHERE show_time = '19:05';
+
+SELECT * FROM movies;
